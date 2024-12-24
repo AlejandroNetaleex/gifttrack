@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1 class="text-center mb-4">Actualizar Registro</h1>
+<form method="post" action="/update/{{ index }}" class="row g-3 mt-3">
+    <div class="col-md-6">
+        <label for="fecha" class="form-label">Fecha Alta</label>
+        <input type="text" name="fecha" class="form-control" value="{{ record['FECHA-ALTA'] }}" required>
+    </div>
+    <div class="col-md-6">
+        <label for="area" class="form-label">Área</label>
+        <input type="text" name="area" class="form-control" value="{{ record['AREA'] }}" required>
+    </div>
+    <div class="col-md-4">
+        <label for="equipo" class="form-label">Equipo</label>
+        <input type="text" name="equipo" class="form-control" value="{{ record['EQUIPO'] }}" required>
+    </div>
+    <div class="col-md-4">
+        <label for="marca" class="form-label">Marca</label>
+        <input type="text" name="marca" class="form-control" value="{{ record['MARCA'] }}" required>
+    </div>
+    <div class="col-md-4">
+        <label for="serie" class="form-label">Número de Serie</label>
+        <input type="text" name="serie" class="form-control" value="{{ record['NUMERO DE SERIE'] }}" required>
+    </div>
+    <div class="col-md-12">
+        <label for="codigo" class="form-label">Código</label>
+        <input type="text" name="codigo" class="form-control" value="{{ record['CODIGO'] }}" required>
+    </div>
+    <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+    </div>
+</form>
+{% endblock %}

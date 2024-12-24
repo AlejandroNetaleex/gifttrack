@@ -1,0 +1,101 @@
+/* General styles */
+body {
+    background-color: #181818;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #121212;
+}
+
+/* Header styles */
+.header {
+    background-color: #232323;
+    padding: 10px 20px;
+    border-bottom: 3px solid #007bff;
+    transition: background-color 0.3s;
+}
+
+body.light-mode .header {
+    background-color: #ffffff;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+#app-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+body.light-mode #app-title {
+    color: #121212;
+}
+
+/* Table container for scroll */
+.table-container {
+    max-height: 400px; /* Limitar altura de la tabla */
+    overflow-y: auto;  /* Scroll vertical */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.table {
+    background-color: #202020;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%; /* Para asegurar que no se desborde */
+}
+
+body.light-mode .table {
+    background-color: #f9f9f9;
+}
+
+/* Botones de igual tamaño */
+.btn-sm {
+    width: 100px; /* Tamaño fijo */
+    text-align: center;
+    margin-right: 5px; /* Espaciado entre botones */
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+
+body.light-mode .btn-danger {
+    background-color: #ff6666;
+    border-color: #ff6666;
+}
+
+body.light-mode .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+/* Footer styles */
+footer {
+    background-color: #232323;
+    color: #ffffff;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+body.light-mode footer {
+    background-color: #f4f4f4;
+    color: #121212;
+}
